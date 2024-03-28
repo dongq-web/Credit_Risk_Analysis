@@ -9,11 +9,22 @@ The target of this model is to assess the likelihood of loan default and decide 
 ### Dataset
 LendingClub is an American peer-to-peer lending company, headquartered in San Francisco, California. It is the world's largest peer-to-peer lending platform.
 
-LendingClub enables borrowers to create unsecured personal loans between $1,000 and $40,000. Investors can browse the loan listings on LendingClub website and select loans based on borrower details, loan amount, grade, and purpose, with a minimum investment of $25 per note. Investors earn returns through interest, while LendingClub generates revenue through origination fees charged to borrowers and service fees levied on investors.
-
 **Sample Dataset**
 
 <img src=/Images/dataset.png width=80% height=80%>
+
+### Loan Portfolio Dashboard
+Loan Portfolio Dashboard monitors and assesses bank lending activities by visulizing aggregated statistics and patterns.
+
+**SQL Code Calculating Annual Return Rate**
+
+<img src=/Images/sql.png width=80% height=80%>
+
+<img src=/Images/dashboard.png>
+
+<img src=/Images/burrower.png>
+
+<img src=/Images/risk.png>
 
 ### Model Evaluation
 Because there are more loans that are paid off compared to the ones that default, class imbalance becomes a concern in credit models. Therefore, it is crucial to employ metrics that are sensitive to imbalanced labels, such as precision, recall, and F1 score. Since it's important to measure the model's ability to identify loans likely to default and to correctly allocate funds to loans expected to be repaid, the recall for the default class and the precision for the non-default class emerge as pivotal metrics in this context.
@@ -35,18 +46,5 @@ Two classfiers are constructed, Random Forest Classifier and Logistic Regression
 
 Even though Logistic Regression has a higher recall for the default class and a higher precision for the non-default class, it has significantly less number of approved loans compared to the actual number of loans that are repaid. Therefore, it might have a less amount of total return.
 
-### Loan Portfolio Dashboard
-Loan Portfolio Dashboard monitors and assesses bank lending activities by visulizing aggregated statistics and patterns.
 
-**SQL Code Calculating Annual Return Rate**
-
-<img src=/Images/sql.png width=80% height=80%>
-
-<img src=/Images/overall.png>
-
-<img src=/Images/character.png>
-
-<img src=/Images/state.png>
-
-<img src=/Images/home.png>
 
